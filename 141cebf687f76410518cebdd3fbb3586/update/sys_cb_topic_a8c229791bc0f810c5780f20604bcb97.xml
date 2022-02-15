@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description/>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{"graph_api_version":"1.0.31","variables":{},"goals":{"primary":{"id":"primary","trigger":{"type":"primary"},"name":"primary","applicability":"","description":"","nodes":{"80489d8b2852483484892dba4f5aacd6":{"id":"80489d8b2852483484892dba4f5aacd6","stepType":"Start","name":"Start","greetingResponse":{"mode":"simple","value":""}},"76aeff653d55441a8200f2f9681eb4f4":{"id":"76aeff653d55441a8200f2f9681eb4f4","stepType":"TerminateGoal","name":"End","confirmationMessage":{"mode":"simple","value":""}}},"edges":[{"id":"5378548f91f24b0688ec692d68fbf698","edgeType":"Edge","source":"80489d8b2852483484892dba4f5aacd6","target":"76aeff653d55441a8200f2f9681eb4f4","sourcePort":"","targetPort":""}]}}}</graph>
+        <key_phrases>James Test</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>James Test</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <roles/>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-11 17:12:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a8c229791bc0f810c5780f20604bcb97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>James Test</sys_name>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name>sys_cb_topic_a8c229791bc0f810c5780f20604bcb97</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-11 17:12:46</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=a8c229791bc0f810c5780f20604bcb97"/>
+</record_update>

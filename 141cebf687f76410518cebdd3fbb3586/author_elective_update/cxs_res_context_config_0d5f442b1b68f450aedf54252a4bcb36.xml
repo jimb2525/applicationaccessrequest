@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cxs_res_context_config">
+    <cxs_res_context_config action="DELETE">
+        <active>true</active>
+        <cxs_context_config display_value="Request Search Context">2c9948231b68f450aedf54252a4bcbe6</cxs_context_config>
+        <cxs_search_res_config display_value="Catalog Items">61ef7904eb53210070a9666cd206fe2d</cxs_search_res_config>
+        <default_search>false</default_search>
+        <name>catalog</name>
+        <order>100</order>
+        <search_operator>IR_AND_OR_QUERY</search_operator>
+        <sys_class_name>cxs_res_context_config</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 18:09:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0d5f442b1b68f450aedf54252a4bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Search Context.Catalog Items</sys_name>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name>cxs_res_context_config_0d5f442b1b68f450aedf54252a4bcb36</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:09:00</sys_updated_on>
+    </cxs_res_context_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</application>
+        <file_path/>
+        <instance_id>a6f52633dbde2c108aea21c4059619d1</instance_id>
+        <instance_name>jbelote12demo</instance_name>
+        <name>cxs_res_context_config_0d5f442b1b68f450aedf54252a4bcb36</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cxs_res_context_config"><cxs_res_context_config action="INSERT_OR_UPDATE"><active>true</active><cxs_context_config display_value="Request Search Context">2c9948231b68f450aedf54252a4bcbe6</cxs_context_config><cxs_search_res_config display_value="Catalog Items">61ef7904eb53210070a9666cd206fe2d</cxs_search_res_config><default_search>false</default_search><name>catalog</name><order>100</order><search_operator>IR_AND_OR_QUERY</search_operator><sys_class_name>cxs_res_context_config</sys_class_name><sys_created_by>james.belote</sys_created_by><sys_created_on>2021-06-10 18:09:00</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0d5f442b1b68f450aedf54252a4bcb36</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Request Search Context.Catalog Items</sys_name><sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package><sys_policy/><sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope><sys_update_name>cxs_res_context_config_0d5f442b1b68f450aedf54252a4bcb36</sys_update_name><sys_updated_by>james.belote</sys_updated_by><sys_updated_on>2021-06-10 18:09:00</sys_updated_on></cxs_res_context_config></record_update>]]></payload>
+        <payload_hash>-1894039315</payload_hash>
+        <record_name>catalog</record_name>
+        <reverted_from/>
+        <source>541cebf687f76410518cebdd3fbb3589</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 18:09:00</sys_created_on>
+        <sys_id>015f442b1b68f450aedf54252a4bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179f71cf5d10000001</sys_recorded_at>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:09:00</sys_updated_on>
+        <type>Resource Configuration</type>
+        <update_guid>095f442b1d68f4504e92722efb0f7438</update_guid>
+        <update_guid_history>095f442b1d68f4504e92722efb0f7438:-1894039315</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="catalog">748fc82b1b68f450aedf54252a4bcbea</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 18:09:49</sys_created_on>
+        <sys_db_object display_value="" name="cxs_res_context_config">cxs_res_context_config</sys_db_object>
+        <sys_id>36df2ccb513640ea8cf1eea6efaf7ca4</sys_id>
+        <sys_metadata>0d5f442b1b68f450aedf54252a4bcb36</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Search Context.Catalog Items</sys_name>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_scope_delete display_value="">378eff31fb034d80a5d0231519a64410</sys_scope_delete>
+        <sys_update_name>cxs_res_context_config_0d5f442b1b68f450aedf54252a4bcb36</sys_update_name>
+        <sys_update_version display_value="cxs_res_context_config_0d5f442b1b68f450aedf54252a4bcb36">015f442b1b68f450aedf54252a4bcb39</sys_update_version>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:09:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

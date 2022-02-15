@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>true</ih_action>
+        <internal_name>get_servicenow_usage</internal_name>
+        <label_cache>[{"name":"{{step[230b97dc-f287-4dad-8eb7-74cba4d31b3f].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[37ac8b1f-66f0-4db0-a6df-03a13a5bf8a9].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":""},{"name":"{{step[37ac8b1f-66f0-4db0-a6df-03a13a5bf8a9].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":""},{"name":"{{step[37ac8b1f-66f0-4db0-a6df-03a13a5bf8a9].root.result}}","label":"step➛JSON Parser step➛root➛result","type":"step","ref":""}]</label_cache>
+        <master_snapshot>3a6bc18b87bf6410518cebdd3fbb35f7</master_snapshot>
+        <name>Get ServiceNow Usage</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 01:45:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f0d1cd4f877f6410518cebdd3fbb35df</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>Get ServiceNow Usage</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_f0d1cd4f877f6410518cebdd3fbb35df</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 18:07:08</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=f0d1cd4f877f6410518cebdd3fbb35df"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f0d1cd4f877f6410518cebdd3fbb35df"/>
+    <sys_element_mapping action="delete_multiple" query="id=f0d1cd4f877f6410518cebdd3fbb35df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>f0d1cd4f877f6410518cebdd3fbb35df</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:35:39</sys_created_on>
+        <sys_id>5e4d8d0f87bf6410518cebdd3fbb352c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:35:39</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f0d1cd4f877f6410518cebdd3fbb35df</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user</field>
+        <id>f0d1cd4f877f6410518cebdd3fbb35df</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:35:05</sys_created_on>
+        <sys_id>8e2dc90f87bf6410518cebdd3fbb358f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:35:05</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f0d1cd4f877f6410518cebdd3fbb35df</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_record</field>
+        <id>f0d1cd4f877f6410518cebdd3fbb35df</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:50:29</sys_created_on>
+        <sys_id>6ba0954387ff6410518cebdd3fbb3581</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:50:29</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f0d1cd4f877f6410518cebdd3fbb35df</table>
+        <value>{{step[37ac8b1f-66f0-4db0-a6df-03a13a5bf8a9].root.result}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=f0d1cd4f877f6410518cebdd3fbb35df^sys_idNOT IN922b0d4b87bf6410518cebdd3fbb35c8,c272cd8f877f6410518cebdd3fbb3592"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get ServiceNow Usage">f0d1cd4f877f6410518cebdd3fbb35df</action>
+        <cid>37ac8b1f-66f0-4db0-a6df-03a13a5bf8a9</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:26:22</sys_created_on>
+        <sys_id>922b0d4b87bf6410518cebdd3fbb35c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:26:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=922b0d4b87bf6410518cebdd3fbb35c8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>922b0d4b87bf6410518cebdd3fbb35c8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:26:22</sys_created_on>
+        <sys_id>162b0d4b87bf6410518cebdd3fbb35e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:26:22</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>922b0d4b87bf6410518cebdd3fbb35c8</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:26:22</sys_created_on>
+        <sys_id>522b0d4b87bf6410518cebdd3fbb35e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:26:22</sys_updated_on>
+        <value>{"result":[{"calendar_integration":"1","country":"","user_password":"$s$8XyEJ/yU2m87/Xlp2r6vmeLQBFq30P1i5dnwPxjKTdk=$oISqMAG2aWh3HKw3jRwoeqfiuNwcPu6Ea2fWaIugPEg=","last_login_time":"","source":"","sys_updated_on":"2021-02-20 06:56:55","building":"","web_service_access_only":"false","notification":"2","enable_multifactor_authn":"false","sys_updated_by":"admin","sys_created_on":"2012-02-18 03:04:52","sys_domain":{"link":"https://jbelote12demo.service-now.com/api/now/table/sys_user_group/global","value":"global"},"state":"","vip":"false","sys_created_by":"admin","zip":"","home_phone":"","time_format":"","last_login":"","default_perspective":"","active":"true","sys_domain_path":"/","cost_center":{"link":"https://jbelote12demo.service-now.com/api/now/table/cmn_cost_center/d9d07bddc0a80a647cf932056ed24652","value":"d9d07bddc0a80a647cf932056ed24652"},"phone":"","name":"Abel Tuter","employee_number":"","password_needs_reset":"true","gender":"Male","city":"","failed_attempts":"","user_name":"abel.tuter","roles":"","title":"","sys_class_name":"sys_user","sys_id":"62826bf03710200044e0bfc8bcbe5df1","internal_integration_user":"false","ldap_server":"","mobile_phone":"","street":"","company":{"link":"https://jbelote12demo.service-now.com/api/now/table/core_company/227cdfb03710200044e0bfc8bcbe5d6b","value":"227cdfb03710200044e0bfc8bcbe5d6b"},"department":{"link":"https://jbelote12demo.service-now.com/api/now/table/cmn_department/9a7ed3f03710200044e0bfc8bcbe5db7","value":"9a7ed3f03710200044e0bfc8bcbe5db7"},"first_name":"Abel","email":"abel.tuter@example.com","introduction":"","preferred_language":"","manager":"","locked_out":"false","sys_mod_count":"5","last_name":"Tuter","photo":"","avatar":"063e38383730310042106710ce41f13b","middle_name":"","sys_tags":"","time_zone":"","schedule":"","date_format":"","location":{"link":"https://jbelote12demo.service-now.com/api/now/table/cmn_location/25b3d04b0a0a0bb300176b546c22db27","value":"25b3d04b0a0a0bb300176b546c22db27"}}]}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>922b0d4b87bf6410518cebdd3fbb35c8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:26:22</sys_created_on>
+        <sys_id>9e2b0d4b87bf6410518cebdd3fbb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:26:22</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"result","children":[{"name":"result_object","children":[{"name":"calendar_integration","children":[],"type":"string","jpath":"$.result[*].calendar_integration","previewValue":"1"},{"name":"country","children":[],"type":"string","jpath":"$.result[*].country","previewValue":""},{"name":"user_password","children":[],"type":"string","jpath":"$.result[*].user_password","previewValue":"$s$8XyEJ/yU2m87/Xlp2r6vmeLQBFq30P1i5dnwPxjKTdk=$oISqMAG2aWh3HKw3jRwoeqfiuNwcPu6Ea2fWaIugPEg="},{"name":"last_login_time","children":[],"type":"string","jpath":"$.result[*].last_login_time","previewValue":""},{"name":"source","children":[],"type":"string","jpath":"$.result[*].source","previewValue":""},{"name":"sys_updated_on","children":[],"type":"string","jpath":"$.result[*].sys_updated_on","previewValue":"2021-02-20 06:56:55"},{"name":"building","children":[],"type":"string","jpath":"$.result[*].building","previewValue":""},{"name":"web_service_access_only","children":[],"type":"string","jpath":"$.result[*].web_service_access_only","previewValue":"false"},{"name":"notification","children":[],"type":"string","jpath":"$.result[*].notification","previewValue":"2"},{"name":"enable_multifactor_authn","children":[],"type":"string","jpath":"$.result[*].enable_multifactor_authn","previewValue":"false"},{"name":"sys_updated_by","children":[],"type":"string","jpath":"$.result[*].sys_updated_by","previewValue":"admin"},{"name":"sys_created_on","children":[],"type":"string","jpath":"$.result[*].sys_created_on","previewValue":"2012-02-18 03:04:52"},{"name":"sys_domain","children":[{"name":"link","children":[],"type":"string","jpath":"$.result[*].sys_domain.link","previewValue":"https://jbelote12demo.service-now.com/api/now/table/sys_user_group/global"},{"name":"value","children":[],"type":"string","jpath":"$.result[*].sys_domain.value","previewValue":"global"}],"type":"object","jpath":"$.result[*].sys_domain","previewValue":""},{"name":"state","children":[],"type":"string","jpath":"$.result[*].state","previewValue":""},{"name":"vip","children":[],"type":"string","jpath":"$.result[*].vip","previewValue":"false"},{"name":"sys_created_by","children":[],"type":"string","jpath":"$.result[*].sys_created_by","previewValue":"admin"},{"name":"zip","children":[],"type":"string","jpath":"$.result[*].zip","previewValue":""},{"name":"home_phone","children":[],"type":"string","jpath":"$.result[*].home_phone","previewValue":""},{"name":"time_format","children":[],"type":"string","jpath":"$.result[*].time_format","previewValue":""},{"name":"last_login","children":[],"type":"string","jpath":"$.result[*].last_login","previewValue":""},{"name":"default_perspective","children":[],"type":"string","jpath":"$.result[*].default_perspective","previewValue":""},{"name":"active","children":[],"type":"string","jpath":"$.result[*].active","previewValue":"true"},{"name":"sys_domain_path","children":[],"type":"string","jpath":"$.result[*].sys_domain_path","previewValue":"/"},{"name":"cost_center","children":[{"name":"link","children":[],"type":"string","jpath":"$.result[*].cost_center.link","previewValue":"https://jbelote12demo.service-now.com/api/now/table/cmn_cost_center/d9d07bddc0a80a647cf932056ed24652"},{"name":"value","children":[],"type":"string","jpath":"$.result[*].cost_center.value","previewValue":"d9d07bddc0a80a647cf932056ed24652"}],"type":"object","jpath":"$.result[*].cost_center","previewValue":""},{"name":"phone","children":[],"type":"string","jpath":"$.result[*].phone","previewValue":""},{"name":"name","children":[],"type":"string","jpath":"$.result[*].name","previewValue":"Abel Tuter"},{"name":"employee_number","children":[],"type":"string","jpath":"$.result[*].employee_number","previewValue":""},{"name":"password_needs_reset","children":[],"type":"string","jpath":"$.result[*].password_needs_reset","previewValue":"true"},{"name":"gender","children":[],"type":"string","jpath":"$.result[*].gender","previewValue":"Male"},{"name":"city","children":[],"type":"string","jpath":"$.result[*].city","previewValue":""},{"name":"failed_attempts","children":[],"type":"string","jpath":"$.result[*].failed_attempts","previewValue":""},{"name":"user_name","children":[],"type":"string","jpath":"$.result[*].user_name","previewValue":"abel.tuter"},{"name":"roles","children":[],"type":"string","jpath":"$.result[*].roles","previewValue":""},{"name":"title","children":[],"type":"string","jpath":"$.result[*].title","previewValue":""},{"name":"sys_class_name","children":[],"type":"string","jpath":"$.result[*].sys_class_name","previewValue":"sys_user"},{"name":"sys_id","children":[],"type":"string","jpath":"$.result[*].sys_id","previewValue":"62826bf03710200044e0bfc8bcbe5df1"},{"name":"internal_integration_user","children":[],"type":"string","jpath":"$.result[*].internal_integration_user","previewValue":"false"},{"name":"ldap_server","children":[],"type":"string","jpath":"$.result[*].ldap_server","previewValue":""},{"name":"mobile_phone","children":[],"type":"string","jpath":"$.result[*].mobile_phone","previewValue":""},{"name":"street","children":[],"type":"string","jpath":"$.result[*].street","previewValue":""},{"name":"company","children":[{"name":"link","children":[],"type":"string","jpath":"$.result[*].company.link","previewValue":"https://jbelote12demo.service-now.com/api/now/table/core_company/227cdfb03710200044e0bfc8bcbe5d6b"},{"name":"value","children":[],"type":"string","jpath":"$.result[*].company.value","previewValue":"227cdfb03710200044e0bfc8bcbe5d6b"}],"type":"object","jpath":"$.result[*].company","previewValue":""},{"name":"department","children":[{"name":"link","children":[],"type":"string","jpath":"$.result[*].department.link","previewValue":"https://jbelote12demo.service-now.com/api/now/table/cmn_department/9a7ed3f03710200044e0bfc8bcbe5db7"},{"name":"value","children":[],"type":"string","jpath":"$.result[*].department.value","previewValue":"9a7ed3f03710200044e0bfc8bcbe5db7"}],"type":"object","jpath":"$.result[*].department","previewValue":""},{"name":"first_name","children":[],"type":"string","jpath":"$.result[*].first_name","previewValue":"Abel"},{"name":"email","children":[],"type":"string","jpath":"$.result[*].email","previewValue":"abel.tuter@example.com"},{"name":"introduction","children":[],"type":"string","jpath":"$.result[*].introduction","previewValue":""},{"name":"preferred_language","children":[],"type":"string","jpath":"$.result[*].preferred_language","previewValue":""},{"name":"manager","children":[],"type":"string","jpath":"$.result[*].manager","previewValue":""},{"name":"locked_out","children":[],"type":"string","jpath":"$.result[*].locked_out","previewValue":"false"},{"name":"sys_mod_count","children":[],"type":"string","jpath":"$.result[*].sys_mod_count","previewValue":"5"},{"name":"last_name","children":[],"type":"string","jpath":"$.result[*].last_name","previewValue":"Tuter"},{"name":"photo","children":[],"type":"string","jpath":"$.result[*].photo","previewValue":""},{"name":"avatar","children":[],"type":"string","jpath":"$.result[*].avatar","previewValue":"063e38383730310042106710ce41f13b"},{"name":"middle_name","children":[],"type":"string","jpath":"$.result[*].middle_name","previewValue":""},{"name":"sys_tags","children":[],"type":"string","jpath":"$.result[*].sys_tags","previewValue":""},{"name":"time_zone","children":[],"type":"string","jpath":"$.result[*].time_zone","previewValue":""},{"name":"schedule","children":[],"type":"string","jpath":"$.result[*].schedule","previewValue":""},{"name":"date_format","children":[],"type":"string","jpath":"$.result[*].date_format","previewValue":""},{"name":"location","children":[{"name":"link","children":[],"type":"string","jpath":"$.result[*].location.link","previewValue":"https://jbelote12demo.service-now.com/api/now/table/cmn_location/25b3d04b0a0a0bb300176b546c22db27"},{"name":"value","children":[],"type":"string","jpath":"$.result[*].location.value","previewValue":"25b3d04b0a0a0bb300176b546c22db27"}],"type":"object","jpath":"$.result[*].location","previewValue":""}],"type":"object","jpath":"$.result[*]","previewValue":""}],"type":"array.object","jpath":"$.result[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=922b0d4b87bf6410518cebdd3fbb35c8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>922b0d4b87bf6410518cebdd3fbb35c8</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:26:22</sys_created_on>
+        <sys_id>5a2b0d4b87bf6410518cebdd3fbb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:26:22</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>922b0d4b87bf6410518cebdd3fbb35c8</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:26:22</sys_created_on>
+        <sys_id>1e2b0d4b87bf6410518cebdd3fbb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:26:22</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>922b0d4b87bf6410518cebdd3fbb35c8</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:26:22</sys_created_on>
+        <sys_id>d22b0d4b87bf6410518cebdd3fbb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:26:22</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[230b97dc-f287-4dad-8eb7-74cba4d31b3f].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>922b0d4b87bf6410518cebdd3fbb35c8</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:26:22</sys_created_on>
+        <sys_id>962b0d4b87bf6410518cebdd3fbb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:26:22</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=922b0d4b87bf6410518cebdd3fbb35c8^sys_idNOT IN962b0d4b87bf6410518cebdd3fbb35cf"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD062dc90f7abf6410ad31cf0a97200976,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=4b966c11-ca53-4a20-ba10-dc7d4598a0a2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">922b0d4b87bf6410518cebdd3fbb35c8</model>
+        <model_id>922b0d4b87bf6410518cebdd3fbb35c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_922b0d4b87bf6410518cebdd3fbb35c8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:26:22</sys_created_on>
+        <sys_id>962b0d4b87bf6410518cebdd3fbb35cf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:35:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get ServiceNow Usage">f0d1cd4f877f6410518cebdd3fbb35df</action>
+        <cid>230b97dc-f287-4dad-8eb7-74cba4d31b3f</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 01:48:23</sys_created_on>
+        <sys_id>c272cd8f877f6410518cebdd3fbb3592</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 17:31:08</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c272cd8f877f6410518cebdd3fbb3592"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c272cd8f877f6410518cebdd3fbb3592</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 01:48:24</sys_created_on>
+        <sys_id>0272cd8f877f6410518cebdd3fbb35d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 01:48:24</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c272cd8f877f6410518cebdd3fbb3592</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 01:48:24</sys_created_on>
+        <sys_id>0e72cd8f877f6410518cebdd3fbb35d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 01:48:24</sys_updated_on>
+        <value>api/now/table/sys_user</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c272cd8f877f6410518cebdd3fbb3592</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 01:48:24</sys_created_on>
+        <sys_id>0e72cd8f877f6410518cebdd3fbb35d8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 17:31:08</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"active","value":"true"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"user_name","value":"abel.tuter"}]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c272cd8f877f6410518cebdd3fbb3592</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 01:48:24</sys_created_on>
+        <sys_id>4a72cd8f877f6410518cebdd3fbb35d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 01:48:24</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c272cd8f877f6410518cebdd3fbb3592</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 01:48:24</sys_created_on>
+        <sys_id>8672cd8f877f6410518cebdd3fbb35d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 01:48:24</sys_updated_on>
+        <value>https://jbelote12demo.service-now.com</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c272cd8f877f6410518cebdd3fbb3592</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 01:49:44</sys_created_on>
+        <sys_id>a1c285cf877f6410518cebdd3fbb35ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 01:49:44</sys_updated_on>
+        <value>63a201cf877f6410518cebdd3fbb35c1</value>
+        <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c272cd8f877f6410518cebdd3fbb3592</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 01:48:24</sys_created_on>
+        <sys_id>c272cd8f877f6410518cebdd3fbb35d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 01:48:24</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c272cd8f877f6410518cebdd3fbb3592</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 01:49:44</sys_created_on>
+        <sys_id>edc285cf877f6410518cebdd3fbb35ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 01:49:44</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=c272cd8f877f6410518cebdd3fbb3592^sys_idNOT IN69c285cf877f6410518cebdd3fbb359d"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=9d06321d-ab3c-4aad-b0f9-1490a278f679</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">c272cd8f877f6410518cebdd3fbb3592</model>
+        <model_id>c272cd8f877f6410518cebdd3fbb3592</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_c272cd8f877f6410518cebdd3fbb3592</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 01:49:43</sys_created_on>
+        <sys_id>69c285cf877f6410518cebdd3fbb359d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:23:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_output action="delete_multiple" query="model=f0d1cd4f877f6410518cebdd3fbb35df^sys_idNOT IN57a0954387ff6410518cebdd3fbb3546"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=result_object,child_name=result_object,child_type=object,child_type_label=Object,child_uiUniqueId=09b82539-469f-463b-bdff-de5f09cb545e,co_type_name=FD9ba09543f7ff641008a81bee66890d43,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=37ac8b1f-66f0-4db0-a6df-03a13a5bf8a9,sourceType=step,sourceUiUniqueId=e34aa7b6-b204-48ce-8a2f-c6af427e69db,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=6f483666-e24c-43b4-a51d-761361fdbb15</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user_record</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>User Record</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get ServiceNow Usage">f0d1cd4f877f6410518cebdd3fbb35df</model>
+        <model_id>f0d1cd4f877f6410518cebdd3fbb35df</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_f0d1cd4f877f6410518cebdd3fbb35df</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:50:28</sys_created_on>
+        <sys_id>57a0954387ff6410518cebdd3fbb3546</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:50:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f0d1cd4f877f6410518cebdd3fbb35df^sys_idNOT IN1fa0954387ff6410518cebdd3fbb3566"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user_record</element>
+        <help/>
+        <hint/>
+        <label>User Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f0d1cd4f877f6410518cebdd3fbb35df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:50:28</sys_created_on>
+        <sys_id>1fa0954387ff6410518cebdd3fbb3566</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:50:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=f0d1cd4f877f6410518cebdd3fbb35df^sys_idNOT IN936b058b87bf6410518cebdd3fbb35a8"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Get ServiceNow Usage">f0d1cd4f877f6410518cebdd3fbb35df</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"936b058b87bf6410518cebdd3fbb35a8","name":"plan"}}</plan>
+        <snapshot>c372685f87ffa410518cebdd3fbb3568</snapshot>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>936b058b87bf6410518cebdd3fbb35a8</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 18:07:10</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>get_servicenow_usage</internal_name>
+        <label_cache>[{"name":"{{step[230b97dc-f287-4dad-8eb7-74cba4d31b3f].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[37ac8b1f-66f0-4db0-a6df-03a13a5bf8a9].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":""},{"name":"{{step[37ac8b1f-66f0-4db0-a6df-03a13a5bf8a9].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":""},{"name":"{{step[37ac8b1f-66f0-4db0-a6df-03a13a5bf8a9].root.result}}","label":"step➛JSON Parser step➛root➛result","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Get ServiceNow Usage</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get ServiceNow Usage">f0d1cd4f877f6410518cebdd3fbb35df</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3a6bc18b87bf6410518cebdd3fbb35f7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:50:44</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=3a6bc18b87bf6410518cebdd3fbb35f7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3a6bc18b87bf6410518cebdd3fbb35f7"/>
+    <sys_element_mapping action="delete_multiple" query="id=3a6bc18b87bf6410518cebdd3fbb35f7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>3a6bc18b87bf6410518cebdd3fbb35f7</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:35:47</sys_created_on>
+        <sys_id>585dcd0f87bf6410518cebdd3fbb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:35:47</sys_updated_on>
+        <table>var__m_sys_hub_action_output_3a6bc18b87bf6410518cebdd3fbb35f7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user</field>
+        <id>3a6bc18b87bf6410518cebdd3fbb35f7</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:35:47</sys_created_on>
+        <sys_id>1c5dcd0f87bf6410518cebdd3fbb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:35:47</sys_updated_on>
+        <table>var__m_sys_hub_action_output_3a6bc18b87bf6410518cebdd3fbb35f7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_record</field>
+        <id>3a6bc18b87bf6410518cebdd3fbb35f7</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:50:45</sys_created_on>
+        <sys_id>57b0194387ff6410518cebdd3fbb35a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:50:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_3a6bc18b87bf6410518cebdd3fbb35f7</table>
+        <value>{{step[37ac8b1f-66f0-4db0-a6df-03a13a5bf8a9].root.result}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=3a6bc18b87bf6410518cebdd3fbb35f7^sys_idNOT IN0f6b058b87bf6410518cebdd3fbb3515,766bc18b87bf6410518cebdd3fbb35fb"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get ServiceNow Usage">3a6bc18b87bf6410518cebdd3fbb35f7</action>
+        <cid>37ac8b1f-66f0-4db0-a6df-03a13a5bf8a9</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:30</sys_created_on>
+        <sys_id>0f6b058b87bf6410518cebdd3fbb3515</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:31</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0f6b058b87bf6410518cebdd3fbb3515"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0f6b058b87bf6410518cebdd3fbb3515</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:31</sys_created_on>
+        <sys_id>0f6b058b87bf6410518cebdd3fbb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:31</sys_updated_on>
+        <value>{"result":[{"calendar_integration":"1","country":"","user_password":"$s$8XyEJ/yU2m87/Xlp2r6vmeLQBFq30P1i5dnwPxjKTdk=$oISqMAG2aWh3HKw3jRwoeqfiuNwcPu6Ea2fWaIugPEg=","last_login_time":"","source":"","sys_updated_on":"2021-02-20 06:56:55","building":"","web_service_access_only":"false","notification":"2","enable_multifactor_authn":"false","sys_updated_by":"admin","sys_created_on":"2012-02-18 03:04:52","sys_domain":{"link":"https://jbelote12demo.service-now.com/api/now/table/sys_user_group/global","value":"global"},"state":"","vip":"false","sys_created_by":"admin","zip":"","home_phone":"","time_format":"","last_login":"","default_perspective":"","active":"true","sys_domain_path":"/","cost_center":{"link":"https://jbelote12demo.service-now.com/api/now/table/cmn_cost_center/d9d07bddc0a80a647cf932056ed24652","value":"d9d07bddc0a80a647cf932056ed24652"},"phone":"","name":"Abel Tuter","employee_number":"","password_needs_reset":"true","gender":"Male","city":"","failed_attempts":"","user_name":"abel.tuter","roles":"","title":"","sys_class_name":"sys_user","sys_id":"62826bf03710200044e0bfc8bcbe5df1","internal_integration_user":"false","ldap_server":"","mobile_phone":"","street":"","company":{"link":"https://jbelote12demo.service-now.com/api/now/table/core_company/227cdfb03710200044e0bfc8bcbe5d6b","value":"227cdfb03710200044e0bfc8bcbe5d6b"},"department":{"link":"https://jbelote12demo.service-now.com/api/now/table/cmn_department/9a7ed3f03710200044e0bfc8bcbe5db7","value":"9a7ed3f03710200044e0bfc8bcbe5db7"},"first_name":"Abel","email":"abel.tuter@example.com","introduction":"","preferred_language":"","manager":"","locked_out":"false","sys_mod_count":"5","last_name":"Tuter","photo":"","avatar":"063e38383730310042106710ce41f13b","middle_name":"","sys_tags":"","time_zone":"","schedule":"","date_format":"","location":{"link":"https://jbelote12demo.service-now.com/api/now/table/cmn_location/25b3d04b0a0a0bb300176b546c22db27","value":"25b3d04b0a0a0bb300176b546c22db27"}}]}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0f6b058b87bf6410518cebdd3fbb3515</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:31</sys_created_on>
+        <sys_id>4b6b058b87bf6410518cebdd3fbb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:31</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"result","children":[{"name":"result_object","children":[{"name":"calendar_integration","children":[],"type":"string","jpath":"$.result[*].calendar_integration","previewValue":"1"},{"name":"country","children":[],"type":"string","jpath":"$.result[*].country","previewValue":""},{"name":"user_password","children":[],"type":"string","jpath":"$.result[*].user_password","previewValue":"$s$8XyEJ/yU2m87/Xlp2r6vmeLQBFq30P1i5dnwPxjKTdk=$oISqMAG2aWh3HKw3jRwoeqfiuNwcPu6Ea2fWaIugPEg="},{"name":"last_login_time","children":[],"type":"string","jpath":"$.result[*].last_login_time","previewValue":""},{"name":"source","children":[],"type":"string","jpath":"$.result[*].source","previewValue":""},{"name":"sys_updated_on","children":[],"type":"string","jpath":"$.result[*].sys_updated_on","previewValue":"2021-02-20 06:56:55"},{"name":"building","children":[],"type":"string","jpath":"$.result[*].building","previewValue":""},{"name":"web_service_access_only","children":[],"type":"string","jpath":"$.result[*].web_service_access_only","previewValue":"false"},{"name":"notification","children":[],"type":"string","jpath":"$.result[*].notification","previewValue":"2"},{"name":"enable_multifactor_authn","children":[],"type":"string","jpath":"$.result[*].enable_multifactor_authn","previewValue":"false"},{"name":"sys_updated_by","children":[],"type":"string","jpath":"$.result[*].sys_updated_by","previewValue":"admin"},{"name":"sys_created_on","children":[],"type":"string","jpath":"$.result[*].sys_created_on","previewValue":"2012-02-18 03:04:52"},{"name":"sys_domain","children":[{"name":"link","children":[],"type":"string","jpath":"$.result[*].sys_domain.link","previewValue":"https://jbelote12demo.service-now.com/api/now/table/sys_user_group/global"},{"name":"value","children":[],"type":"string","jpath":"$.result[*].sys_domain.value","previewValue":"global"}],"type":"object","jpath":"$.result[*].sys_domain","previewValue":""},{"name":"state","children":[],"type":"string","jpath":"$.result[*].state","previewValue":""},{"name":"vip","children":[],"type":"string","jpath":"$.result[*].vip","previewValue":"false"},{"name":"sys_created_by","children":[],"type":"string","jpath":"$.result[*].sys_created_by","previewValue":"admin"},{"name":"zip","children":[],"type":"string","jpath":"$.result[*].zip","previewValue":""},{"name":"home_phone","children":[],"type":"string","jpath":"$.result[*].home_phone","previewValue":""},{"name":"time_format","children":[],"type":"string","jpath":"$.result[*].time_format","previewValue":""},{"name":"last_login","children":[],"type":"string","jpath":"$.result[*].last_login","previewValue":""},{"name":"default_perspective","children":[],"type":"string","jpath":"$.result[*].default_perspective","previewValue":""},{"name":"active","children":[],"type":"string","jpath":"$.result[*].active","previewValue":"true"},{"name":"sys_domain_path","children":[],"type":"string","jpath":"$.result[*].sys_domain_path","previewValue":"/"},{"name":"cost_center","children":[{"name":"link","children":[],"type":"string","jpath":"$.result[*].cost_center.link","previewValue":"https://jbelote12demo.service-now.com/api/now/table/cmn_cost_center/d9d07bddc0a80a647cf932056ed24652"},{"name":"value","children":[],"type":"string","jpath":"$.result[*].cost_center.value","previewValue":"d9d07bddc0a80a647cf932056ed24652"}],"type":"object","jpath":"$.result[*].cost_center","previewValue":""},{"name":"phone","children":[],"type":"string","jpath":"$.result[*].phone","previewValue":""},{"name":"name","children":[],"type":"string","jpath":"$.result[*].name","previewValue":"Abel Tuter"},{"name":"employee_number","children":[],"type":"string","jpath":"$.result[*].employee_number","previewValue":""},{"name":"password_needs_reset","children":[],"type":"string","jpath":"$.result[*].password_needs_reset","previewValue":"true"},{"name":"gender","children":[],"type":"string","jpath":"$.result[*].gender","previewValue":"Male"},{"name":"city","children":[],"type":"string","jpath":"$.result[*].city","previewValue":""},{"name":"failed_attempts","children":[],"type":"string","jpath":"$.result[*].failed_attempts","previewValue":""},{"name":"user_name","children":[],"type":"string","jpath":"$.result[*].user_name","previewValue":"abel.tuter"},{"name":"roles","children":[],"type":"string","jpath":"$.result[*].roles","previewValue":""},{"name":"title","children":[],"type":"string","jpath":"$.result[*].title","previewValue":""},{"name":"sys_class_name","children":[],"type":"string","jpath":"$.result[*].sys_class_name","previewValue":"sys_user"},{"name":"sys_id","children":[],"type":"string","jpath":"$.result[*].sys_id","previewValue":"62826bf03710200044e0bfc8bcbe5df1"},{"name":"internal_integration_user","children":[],"type":"string","jpath":"$.result[*].internal_integration_user","previewValue":"false"},{"name":"ldap_server","children":[],"type":"string","jpath":"$.result[*].ldap_server","previewValue":""},{"name":"mobile_phone","children":[],"type":"string","jpath":"$.result[*].mobile_phone","previewValue":""},{"name":"street","children":[],"type":"string","jpath":"$.result[*].street","previewValue":""},{"name":"company","children":[{"name":"link","children":[],"type":"string","jpath":"$.result[*].company.link","previewValue":"https://jbelote12demo.service-now.com/api/now/table/core_company/227cdfb03710200044e0bfc8bcbe5d6b"},{"name":"value","children":[],"type":"string","jpath":"$.result[*].company.value","previewValue":"227cdfb03710200044e0bfc8bcbe5d6b"}],"type":"object","jpath":"$.result[*].company","previewValue":""},{"name":"department","children":[{"name":"link","children":[],"type":"string","jpath":"$.result[*].department.link","previewValue":"https://jbelote12demo.service-now.com/api/now/table/cmn_department/9a7ed3f03710200044e0bfc8bcbe5db7"},{"name":"value","children":[],"type":"string","jpath":"$.result[*].department.value","previewValue":"9a7ed3f03710200044e0bfc8bcbe5db7"}],"type":"object","jpath":"$.result[*].department","previewValue":""},{"name":"first_name","children":[],"type":"string","jpath":"$.result[*].first_name","previewValue":"Abel"},{"name":"email","children":[],"type":"string","jpath":"$.result[*].email","previewValue":"abel.tuter@example.com"},{"name":"introduction","children":[],"type":"string","jpath":"$.result[*].introduction","previewValue":""},{"name":"preferred_language","children":[],"type":"string","jpath":"$.result[*].preferred_language","previewValue":""},{"name":"manager","children":[],"type":"string","jpath":"$.result[*].manager","previewValue":""},{"name":"locked_out","children":[],"type":"string","jpath":"$.result[*].locked_out","previewValue":"false"},{"name":"sys_mod_count","children":[],"type":"string","jpath":"$.result[*].sys_mod_count","previewValue":"5"},{"name":"last_name","children":[],"type":"string","jpath":"$.result[*].last_name","previewValue":"Tuter"},{"name":"photo","children":[],"type":"string","jpath":"$.result[*].photo","previewValue":""},{"name":"avatar","children":[],"type":"string","jpath":"$.result[*].avatar","previewValue":"063e38383730310042106710ce41f13b"},{"name":"middle_name","children":[],"type":"string","jpath":"$.result[*].middle_name","previewValue":""},{"name":"sys_tags","children":[],"type":"string","jpath":"$.result[*].sys_tags","previewValue":""},{"name":"time_zone","children":[],"type":"string","jpath":"$.result[*].time_zone","previewValue":""},{"name":"schedule","children":[],"type":"string","jpath":"$.result[*].schedule","previewValue":""},{"name":"date_format","children":[],"type":"string","jpath":"$.result[*].date_format","previewValue":""},{"name":"location","children":[{"name":"link","children":[],"type":"string","jpath":"$.result[*].location.link","previewValue":"https://jbelote12demo.service-now.com/api/now/table/cmn_location/25b3d04b0a0a0bb300176b546c22db27"},{"name":"value","children":[],"type":"string","jpath":"$.result[*].location.value","previewValue":"25b3d04b0a0a0bb300176b546c22db27"}],"type":"object","jpath":"$.result[*].location","previewValue":""}],"type":"object","jpath":"$.result[*]","previewValue":""}],"type":"array.object","jpath":"$.result[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0f6b058b87bf6410518cebdd3fbb3515</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:31</sys_created_on>
+        <sys_id>cf6b058b87bf6410518cebdd3fbb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:31</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0f6b058b87bf6410518cebdd3fbb3515"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>0f6b058b87bf6410518cebdd3fbb3515</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:31</sys_created_on>
+        <sys_id>076b058b87bf6410518cebdd3fbb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>0f6b058b87bf6410518cebdd3fbb3515</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:31</sys_created_on>
+        <sys_id>c76b058b87bf6410518cebdd3fbb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>0f6b058b87bf6410518cebdd3fbb3515</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:31</sys_created_on>
+        <sys_id>8f6b058b87bf6410518cebdd3fbb3523</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[230b97dc-f287-4dad-8eb7-74cba4d31b3f].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>0f6b058b87bf6410518cebdd3fbb3515</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:31</sys_created_on>
+        <sys_id>436b058b87bf6410518cebdd3fbb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=0f6b058b87bf6410518cebdd3fbb3515^sys_idNOT IN8f6b058b87bf6410518cebdd3fbb351a"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDc76b058b37bf6410df41835927399518,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=4b966c11-ca53-4a20-ba10-dc7d4598a0a2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">0f6b058b87bf6410518cebdd3fbb3515</model>
+        <model_id>0f6b058b87bf6410518cebdd3fbb3515</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_0f6b058b87bf6410518cebdd3fbb3515</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:31</sys_created_on>
+        <sys_id>8f6b058b87bf6410518cebdd3fbb351a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:35:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get ServiceNow Usage">3a6bc18b87bf6410518cebdd3fbb35f7</action>
+        <cid>230b97dc-f287-4dad-8eb7-74cba4d31b3f</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:30</sys_created_on>
+        <sys_id>766bc18b87bf6410518cebdd3fbb35fb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 18:07:08</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=766bc18b87bf6410518cebdd3fbb35fb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>766bc18b87bf6410518cebdd3fbb35fb</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:30</sys_created_on>
+        <sys_id>036b058b87bf6410518cebdd3fbb3511</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:30</sys_updated_on>
+        <value>63a201cf877f6410518cebdd3fbb35c1</value>
+        <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>766bc18b87bf6410518cebdd3fbb35fb</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:30</sys_created_on>
+        <sys_id>076b058b87bf6410518cebdd3fbb3510</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:30</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>766bc18b87bf6410518cebdd3fbb35fb</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:30</sys_created_on>
+        <sys_id>436b058b87bf6410518cebdd3fbb3510</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:30</sys_updated_on>
+        <value>api/now/table/sys_user</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>766bc18b87bf6410518cebdd3fbb35fb</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:30</sys_created_on>
+        <sys_id>4f6b058b87bf6410518cebdd3fbb3510</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:30</sys_updated_on>
+        <value>https://jbelote12demo.service-now.com</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>766bc18b87bf6410518cebdd3fbb35fb</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:30</sys_created_on>
+        <sys_id>876b058b87bf6410518cebdd3fbb3511</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 18:07:08</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"active","value":"true"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"user_name","value":"abel.tuter"}]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>766bc18b87bf6410518cebdd3fbb35fb</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:30</sys_created_on>
+        <sys_id>8b6b058b87bf6410518cebdd3fbb3510</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:30</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>766bc18b87bf6410518cebdd3fbb35fb</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:30</sys_created_on>
+        <sys_id>c36b058b87bf6410518cebdd3fbb3511</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:30</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>766bc18b87bf6410518cebdd3fbb35fb</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:30</sys_created_on>
+        <sys_id>c76b058b87bf6410518cebdd3fbb3510</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:30</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=766bc18b87bf6410518cebdd3fbb35fb^sys_idNOT INb26b058b87bf6410518cebdd3fbb3502"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=9d06321d-ab3c-4aad-b0f9-1490a278f679</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">766bc18b87bf6410518cebdd3fbb35fb</model>
+        <model_id>766bc18b87bf6410518cebdd3fbb35fb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_766bc18b87bf6410518cebdd3fbb35fb</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:27:30</sys_created_on>
+        <sys_id>b26b058b87bf6410518cebdd3fbb3502</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:27:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_output action="delete_multiple" query="model=3a6bc18b87bf6410518cebdd3fbb35f7^sys_idNOT IN5fb0194387ff6410518cebdd3fbb3583"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=result_object,child_name=result_object,child_type=object,child_type_label=Object,child_uiUniqueId=09b82539-469f-463b-bdff-de5f09cb545e,co_type_name=FDd7b019436dff641019e1d429a3785c81,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=37ac8b1f-66f0-4db0-a6df-03a13a5bf8a9,sourceType=step,sourceUiUniqueId=e34aa7b6-b204-48ce-8a2f-c6af427e69db,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=6f483666-e24c-43b4-a51d-761361fdbb15</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user_record</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>User Record</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get ServiceNow Usage">3a6bc18b87bf6410518cebdd3fbb35f7</model>
+        <model_id>3a6bc18b87bf6410518cebdd3fbb35f7</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_3a6bc18b87bf6410518cebdd3fbb35f7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:50:45</sys_created_on>
+        <sys_id>5fb0194387ff6410518cebdd3fbb3583</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:50:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_3a6bc18b87bf6410518cebdd3fbb35f7^sys_idNOT IN53b0194387ff6410518cebdd3fbb358b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user_record</element>
+        <help/>
+        <hint/>
+        <label>User Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_3a6bc18b87bf6410518cebdd3fbb35f7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 02:50:45</sys_created_on>
+        <sys_id>53b0194387ff6410518cebdd3fbb358b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 02:50:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>f0d1cd4f877f6410518cebdd3fbb35df</sys_id>
+        <latest_snapshot>3a6bc18b87bf6410518cebdd3fbb35f7</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>

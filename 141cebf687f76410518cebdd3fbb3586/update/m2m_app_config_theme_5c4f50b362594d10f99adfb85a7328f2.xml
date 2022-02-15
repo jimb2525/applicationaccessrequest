@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-02 16:55:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5c4f50b362594d10f99adfb85a7328f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name>m2m_app_config_theme_5c4f50b362594d10f99adfb85a7328f2</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-02-02 16:55:19</sys_updated_on>
+        <theme display_value="Starter Workspace Theme">584f50b31b594d101a04fc7f90b824f3</theme>
+        <ux_app_configuration display_value="Access Request Management Workspace Config">9c4f50b307594d10d9972abeb1a581f2</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

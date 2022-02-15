@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list_category">
+    <sys_ux_list_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <configuration display_value="Access Request Management Workspace_menu_config">36dcbcc7877f6410518cebdd3fbb35fd</configuration>
+        <description/>
+        <order>500</order>
+        <sys_class_name>sys_ux_list_category</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 15:36:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>456ceb9b1ba4f450aedf54252a4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Audit Finding Check</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name>sys_ux_list_category_456ceb9b1ba4f450aedf54252a4bcb01</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 15:36:41</sys_updated_on>
+        <title>Audit Finding Check</title>
+    </sys_ux_list_category>
+</record_update>
