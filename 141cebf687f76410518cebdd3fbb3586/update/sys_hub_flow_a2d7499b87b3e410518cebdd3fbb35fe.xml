@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>onboard_new_user</internal_name>
+        <label_cache>[{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.reason_for_request","label":"1➛reason_for_request","reference":"","reference_display":"reason_for_request","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.effective_date","label":"1➛effective_date","reference":"","reference_display":"effective_date","type":"glide_date","base_type":"glide_date","attributes":{"catalogType":"9","catalogTypeLabel":"Date"}},{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.application","label":"1➛application","reference":"cmdb_ci_business_app","reference_display":"application","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for","label":"1➛requested_for","reference":"sys_user","reference_display":"requested_for","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"Service Catalog_1.request_item","label":"Trigger➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"default_search_field":"number"}},{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for.name","label":"1➛requested_for➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"d0ddc87b-74e8-4868-b537-5a61b714ce40.status","label":"2➛status","reference_display":"status","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d0ddc87b-74e8-4868-b537-5a61b714ce40.error_message","label":"2➛error_message","reference_display":"error_message","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d0ddc87b-74e8-4868-b537-5a61b714ce40.user_id","label":"2➛user_id","reference_display":"user_id","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for.email","label":"1➛requested_for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for.first_name","label":"1➛requested_for➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for.last_name","label":"1➛requested_for➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"}]</label_cache>
+        <master_snapshot>1d1f415787f3e410518cebdd3fbb350a</master_snapshot>
+        <name>Onboard New User</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>351f815787f3e410518cebdd3fbb3570</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:50:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a2d7499b87b3e410518cebdd3fbb35fe</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Onboard New User</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name>sys_hub_flow_a2d7499b87b3e410518cebdd3fbb35fe</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:25</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=a2d7499b87b3e410518cebdd3fbb35fe"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a2d7499b87b3e410518cebdd3fbb35fe"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <run_flow_in>background</run_flow_in>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:22:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>351f815787f3e410518cebdd3fbb3570</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:22:01</sys_updated_on>
+    </sys_flow_catalog_trigger>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=a2d7499b87b3e410518cebdd3fbb35fe^sys_idNOT INcf28011f87b3e410518cebdd3fbb356d"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Onboard New User">a2d7499b87b3e410518cebdd3fbb35fe</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:51:48</sys_created_on>
+        <sys_id>cf28011f87b3e410518cebdd3fbb356d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:24</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cf28011f87b3e410518cebdd3fbb356d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a2d7499b87b3e410518cebdd3fbb35fe^sys_idNOT INead7499b87b3e410518cebdd3fbb35ff"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a2d7499b87b3e410518cebdd3fbb35fe</id>
+        <name>Onboard New User</name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:50:24</sys_created_on>
+        <sys_id>ead7499b87b3e410518cebdd3fbb35ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 20:50:24</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=a2d7499b87b3e410518cebdd3fbb35fe^sys_idNOT IN0b28011f87b3e410518cebdd3fbb3559,cf28011f87b3e410518cebdd3fbb3560"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Onboard New User">a2d7499b87b3e410518cebdd3fbb35fe</model>
+        <model_id>a2d7499b87b3e410518cebdd3fbb35fe</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a2d7499b87b3e410518cebdd3fbb35fe</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:51:47</sys_created_on>
+        <sys_id>0b28011f87b3e410518cebdd3fbb3559</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Onboard New User">a2d7499b87b3e410518cebdd3fbb35fe</model>
+        <model_id>a2d7499b87b3e410518cebdd3fbb35fe</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a2d7499b87b3e410518cebdd3fbb35fe</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:51:47</sys_created_on>
+        <sys_id>cf28011f87b3e410518cebdd3fbb3560</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=a2d7499b87b3e410518cebdd3fbb35fe^sys_idNOT IN280199d787f3e410518cebdd3fbb35d6,8f28011f87b3e410518cebdd3fbb3572,cd68c51f87b3e410518cebdd3fbb35df"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create User">5b29bb4073c82300ed042ea3c4f6a750</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Onboard New User">a2d7499b87b3e410518cebdd3fbb35fe</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:30:24</sys_created_on>
+        <sys_id>280199d787f3e410518cebdd3fbb35d6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:24</sys_updated_on>
+        <ui_id>d0ddc87b-74e8-4868-b537-5a61b714ce40</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=280199d787f3e410518cebdd3fbb35d6"/>
+    <sys_element_mapping action="delete_multiple" query="id=280199d787f3e410518cebdd3fbb35d6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>display_name</field>
+        <id>280199d787f3e410518cebdd3fbb35d6</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:30:24</sys_created_on>
+        <sys_id>600199d787f3e410518cebdd3fbb35db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5b29bb4073c82300ed042ea3c4f6a750</table>
+        <value>{{06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>given_name</field>
+        <id>280199d787f3e410518cebdd3fbb35d6</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:30:24</sys_created_on>
+        <sys_id>280199d787f3e410518cebdd3fbb35db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5b29bb4073c82300ed042ea3c4f6a750</table>
+        <value>{{06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for.first_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mail_alias</field>
+        <id>280199d787f3e410518cebdd3fbb35d6</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:30:24</sys_created_on>
+        <sys_id>600199d787f3e410518cebdd3fbb35dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5b29bb4073c82300ed042ea3c4f6a750</table>
+        <value>{{06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for.email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>surname</field>
+        <id>280199d787f3e410518cebdd3fbb35d6</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:30:24</sys_created_on>
+        <sys_id>ac0199d787f3e410518cebdd3fbb35db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5b29bb4073c82300ed042ea3c4f6a750</table>
+        <value>{{06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for.last_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_login_id</field>
+        <id>280199d787f3e410518cebdd3fbb35d6</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:30:24</sys_created_on>
+        <sys_id>e80199d787f3e410518cebdd3fbb35db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5b29bb4073c82300ed042ea3c4f6a750</table>
+        <value>{{06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for.name}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=280199d787f3e410518cebdd3fbb35d6^sys_idNOT IN200199d787f3e410518cebdd3fbb35d9"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>password</input_name>
+        <instance>280199d787f3e410518cebdd3fbb35d6</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"password":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\nreturn \"SNdemo123\"\n*/"}}</script>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:30:24</sys_created_on>
+        <sys_id>200199d787f3e410518cebdd3fbb35d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:24</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Onboard New User">a2d7499b87b3e410518cebdd3fbb35fe</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:51:48</sys_created_on>
+        <sys_id>8f28011f87b3e410518cebdd3fbb3572</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:24</sys_updated_on>
+        <ui_id>06630b5e-a3b6-4e8b-aabb-2ee01be5a71d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8f28011f87b3e410518cebdd3fbb3572"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8f28011f87b3e410518cebdd3fbb3572</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:51:48</sys_created_on>
+        <sys_id>0f28011f87b3e410518cebdd3fbb3575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 20:51:48</sys_updated_on>
+        <value>188c74c7877f6410518cebdd3fbb3583:item_option_new,208c74c7877f6410518cebdd3fbb359f:item_option_new,ac8c74c7877f6410518cebdd3fbb35a4:item_option_new,208c74c7877f6410518cebdd3fbb35ab:item_option_new</value>
+        <variable display_value="Catalog Variables">7b0ba3abc31013002841b63b12d3aef7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8f28011f87b3e410518cebdd3fbb3572</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:51:48</sys_created_on>
+        <sys_id>c328011f87b3e410518cebdd3fbb3576</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 20:51:48</sys_updated_on>
+        <value>d08c3807877f6410518cebdd3fbb3537</value>
+        <variable display_value="Template Catalog Items and Variable Sets">bb0ba3abc31013002841b63b12d3aef1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8f28011f87b3e410518cebdd3fbb3572"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>8f28011f87b3e410518cebdd3fbb3572</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:51:48</sys_created_on>
+        <sys_id>0328011f87b3e410518cebdd3fbb3575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 20:51:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>8f28011f87b3e410518cebdd3fbb3572</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:51:48</sys_created_on>
+        <sys_id>8b28011f87b3e410518cebdd3fbb3575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 20:51:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>8f28011f87b3e410518cebdd3fbb3572</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:51:48</sys_created_on>
+        <sys_id>c728011f87b3e410518cebdd3fbb3575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 20:51:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create ServiceNow User">f0135c5b87bfa410518cebdd3fbb35a3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Onboard New User">a2d7499b87b3e410518cebdd3fbb35fe</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:52:45</sys_created_on>
+        <sys_id>cd68c51f87b3e410518cebdd3fbb35df</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:30:24</sys_updated_on>
+        <ui_id>20f9d4db-c28e-450f-986e-8b5188515922</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cd68c51f87b3e410518cebdd3fbb35df"/>
+    <sys_element_mapping action="delete_multiple" query="id=cd68c51f87b3e410518cebdd3fbb35df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user</field>
+        <id>cd68c51f87b3e410518cebdd3fbb35df</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:52:45</sys_created_on>
+        <sys_id>8168c51f87b3e410518cebdd3fbb35e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 20:52:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f0135c5b87bfa410518cebdd3fbb35a3</table>
+        <value>{{06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for.name}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a2d7499b87b3e410518cebdd3fbb35fe^sys_idNOT IN0b28011f87b3e410518cebdd3fbb355f,4f28011f87b3e410518cebdd3fbb356a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a2d7499b87b3e410518cebdd3fbb35fe</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:51:47</sys_created_on>
+        <sys_id>0b28011f87b3e410518cebdd3fbb355f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 20:51:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a2d7499b87b3e410518cebdd3fbb35fe</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 20:51:48</sys_created_on>
+        <sys_id>4f28011f87b3e410518cebdd3fbb356a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 20:51:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a2d7499b87b3e410518cebdd3fbb35fe^sys_idNOT INfd1f815787f3e410518cebdd3fbb3570"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>a2d7499b87b3e410518cebdd3fbb35fe</plan_id>
+        <snapshot>1d1f415787f3e410518cebdd3fbb350a</snapshot>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:22:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fd1f815787f3e410518cebdd3fbb3570</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:22:01</sys_updated_on>
+        <trigger display_value="">351f815787f3e410518cebdd3fbb3570</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>onboard_new_user</internal_name>
+        <label_cache>[{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for.name","label":"1➛requested_for➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Service Catalog_1.request_item","label":"Trigger➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"default_search_field":"number"}},{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for","label":"1➛requested_for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.application","label":"1➛application","reference":"cmdb_ci_business_app","reference_display":"Business Application","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.effective_date","label":"1➛effective_date","reference":"","reference_display":"effective_date","type":"glide_date","base_type":"glide_date","attributes":{"catalogType":"9","catalogTypeLabel":"Date"}},{"name":"06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.reason_for_request","label":"1➛reason_for_request","reference":"","reference_display":"reason_for_request","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}}]</label_cache>
+        <master>true</master>
+        <name>Onboard New User</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Onboard New User">a2d7499b87b3e410518cebdd3fbb35fe</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1d1f415787f3e410518cebdd3fbb350a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=1d1f415787f3e410518cebdd3fbb350a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1d1f415787f3e410518cebdd3fbb350a"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=1d1f415787f3e410518cebdd3fbb350a^sys_idNOT INd11f415787f3e410518cebdd3fbb3567"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Onboard New User">1d1f415787f3e410518cebdd3fbb350a</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>d11f415787f3e410518cebdd3fbb3567</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:22:01</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d11f415787f3e410518cebdd3fbb3567"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1d1f415787f3e410518cebdd3fbb350a^sys_idNOT IN9d1f415787f3e410518cebdd3fbb350b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1d1f415787f3e410518cebdd3fbb350a</id>
+        <name>Onboard New User</name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>9d1f415787f3e410518cebdd3fbb350b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=1d1f415787f3e410518cebdd3fbb350a^sys_idNOT IN151f415787f3e410518cebdd3fbb350d,d11f415787f3e410518cebdd3fbb3544"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Onboard New User">1d1f415787f3e410518cebdd3fbb350a</model>
+        <model_id>1d1f415787f3e410518cebdd3fbb350a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1d1f415787f3e410518cebdd3fbb350a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>151f415787f3e410518cebdd3fbb350d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Onboard New User">1d1f415787f3e410518cebdd3fbb350a</model>
+        <model_id>1d1f415787f3e410518cebdd3fbb350a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1d1f415787f3e410518cebdd3fbb350a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>d11f415787f3e410518cebdd3fbb3544</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1d1f415787f3e410518cebdd3fbb350a^sys_idNOT IN551f415787f3e410518cebdd3fbb3557,5d1f415787f3e410518cebdd3fbb3565"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <compiled_snapshot>330ba3abc31013002841b63b12d3aee8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Onboard New User">1d1f415787f3e410518cebdd3fbb350a</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>551f415787f3e410518cebdd3fbb3557</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <ui_id>06630b5e-a3b6-4e8b-aabb-2ee01be5a71d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=551f415787f3e410518cebdd3fbb3557"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>551f415787f3e410518cebdd3fbb3557</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>591f415787f3e410518cebdd3fbb3559</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <value>d08c3807877f6410518cebdd3fbb3537</value>
+        <variable display_value="Template Catalog Items and Variable Sets">bb0ba3abc31013002841b63b12d3aef1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>551f415787f3e410518cebdd3fbb3557</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>951f415787f3e410518cebdd3fbb3559</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <value>188c74c7877f6410518cebdd3fbb3583:item_option_new,208c74c7877f6410518cebdd3fbb359f:item_option_new,ac8c74c7877f6410518cebdd3fbb35a4:item_option_new,208c74c7877f6410518cebdd3fbb35ab:item_option_new</value>
+        <variable display_value="Catalog Variables">7b0ba3abc31013002841b63b12d3aef7</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=551f415787f3e410518cebdd3fbb3557"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>551f415787f3e410518cebdd3fbb3557</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>9d1f415787f3e410518cebdd3fbb3558</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>551f415787f3e410518cebdd3fbb3557</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>151f415787f3e410518cebdd3fbb3559</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>551f415787f3e410518cebdd3fbb3557</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>511f415787f3e410518cebdd3fbb3559</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create ServiceNow User">f0135c5b87bfa410518cebdd3fbb35a3</action_type>
+        <action_type_parent display_value="Create ServiceNow User">c341b34f87fba410518cebdd3fbb35e5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f0135c5b87bfa410518cebdd3fbb35a3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Onboard New User">1d1f415787f3e410518cebdd3fbb350a</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>5d1f415787f3e410518cebdd3fbb3565</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <ui_id>20f9d4db-c28e-450f-986e-8b5188515922</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5d1f415787f3e410518cebdd3fbb3565"/>
+    <sys_element_mapping action="delete_multiple" query="id=5d1f415787f3e410518cebdd3fbb3565"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user</field>
+        <id>5d1f415787f3e410518cebdd3fbb3565</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>9d1f415787f3e410518cebdd3fbb3566</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f0135c5b87bfa410518cebdd3fbb35a3</table>
+        <value>{{06630b5e-a3b6-4e8b-aabb-2ee01be5a71d.requested_for.name}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1d1f415787f3e410518cebdd3fbb350a^sys_idNOT IN151f415787f3e410518cebdd3fbb354b,911f415787f3e410518cebdd3fbb3540"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1d1f415787f3e410518cebdd3fbb350a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>151f415787f3e410518cebdd3fbb354b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1d1f415787f3e410518cebdd3fbb350a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 21:21:59</sys_created_on>
+        <sys_id>911f415787f3e410518cebdd3fbb3540</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 21:21:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>a2d7499b87b3e410518cebdd3fbb35fe</sys_id>
+        <latest_snapshot>1d1f415787f3e410518cebdd3fbb350a</latest_snapshot>
+    </sys_hub_flow>
+</record_update>
