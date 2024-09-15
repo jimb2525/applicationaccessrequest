@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Audit Findings" max_length="40" name="x_snc_access_req_0_audit_findings" sizeclass="3" type="collection">
+        <element label="Application" max_length="32" name="application" reference="cmdb_ci_business_app" type="reference"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+    </element>
+</database>

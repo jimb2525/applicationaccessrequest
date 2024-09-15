@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list">
+    <sys_ux_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Access Request">f2dcfcc7877f6410518cebdd3fbb3531</category>
+        <columns>number,priority,state,assigned_to,short_description,sys_class_name</columns>
+        <condition/>
+        <configuration display_value="Access Request Management Workspace_menu_config">36dcbcc7877f6410518cebdd3fbb35fd</configuration>
+        <groups/>
+        <list_attributes/>
+        <order>50</order>
+        <roles/>
+        <sys_class_name>sys_ux_list</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-05-03 01:23:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>43dcfcc7877f6410518cebdd3fbb3534</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name>sys_ux_list_43dcfcc7877f6410518cebdd3fbb3534</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-05-03 01:23:53</sys_updated_on>
+        <table>x_snc_access_req_0_access_request</table>
+        <title>All</title>
+    </sys_ux_list>
+</record_update>

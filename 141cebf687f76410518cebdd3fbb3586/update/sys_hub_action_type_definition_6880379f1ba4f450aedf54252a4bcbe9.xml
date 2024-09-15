@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>check_access_requests</internal_name>
+        <label_cache>[{"name":"{{action.application_to_check}}","label":"action➛Application To Check","type":"action","ref":""},{"name":"{{step[0600a230-771f-4fff-987e-77577aa07cb2].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Check Access Requests</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 15:54:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6880379f1ba4f450aedf54252a4bcbe9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Check Access Requests</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_6880379f1ba4f450aedf54252a4bcbe9</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:41:17</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=6880379f1ba4f450aedf54252a4bcbe9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6880379f1ba4f450aedf54252a4bcbe9"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=6880379f1ba4f450aedf54252a4bcbe9^sys_idNOT IN65b610e31ba8f450aedf54252a4bcb87,ce2dfb131b28f450aedf54252a4bcbc9"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Check Access Requests">6880379f1ba4f450aedf54252a4bcbe9</action>
+        <cid>25d94cfb-6e13-4ea3-a30f-dda3a8636819</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 18:41:16</sys_created_on>
+        <sys_id>65b610e31ba8f450aedf54252a4bcb87</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:41:17</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=65b610e31ba8f450aedf54252a4bcb87"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>65b610e31ba8f450aedf54252a4bcb87</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 18:41:17</sys_created_on>
+        <sys_id>31b610e31ba8f450aedf54252a4bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:41:17</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>65b610e31ba8f450aedf54252a4bcb87</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 18:41:17</sys_created_on>
+        <sys_id>75b610e31ba8f450aedf54252a4bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:41:17</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"result","children":[{"name":"request","children":[{"name":"debug","children":[],"type":"string","jpath":"$.result.request.debug","previewValue":"false"},{"name":"meta","children":[{"name":"window","children":[{"name":"start","children":[],"type":"string","jpath":"$.result.request.meta.window.start","previewValue":"0.0"},{"name":"end","children":[],"type":"string","jpath":"$.result.request.meta.window.end","previewValue":"1.0"}],"type":"object","jpath":"$.result.request.meta.window","previewValue":""},{"name":"totalResults_log","children":[],"type":"string","jpath":"$.result.request.meta.totalResults_log","previewValue":"23.0"}],"type":"object","jpath":"$.result.request.meta","previewValue":""},{"name":"query","children":[{"name":"freetext","children":[],"type":"string","jpath":"$.result.request.query.freetext","previewValue":"mail"}],"type":"object","jpath":"$.result.request.query","previewValue":""},{"name":"context","children":[],"type":"string","jpath":"$.result.request.context","previewValue":"091fa3d3c37221003d2ae219cdba8f0e"}],"type":"object","jpath":"$.result.request","previewValue":""},{"name":"meta","children":[{"name":"returned_results","children":[],"type":"string","jpath":"$.result.meta.returned_results","previewValue":"1.0"},{"name":"has_more_results","children":[],"type":"string","jpath":"$.result.meta.has_more_results","previewValue":"true"},{"name":"sources","children":[{"name":"pinned","children":[{"name":"name","children":[],"type":"string","jpath":"$.result.meta.sources.pinned.name","previewValue":"pinned"},{"name":"status","children":[{"name":"code","children":[],"type":"string","jpath":"$.result.meta.sources.pinned.status.code","previewValue":"200.0"}],"type":"object","jpath":"$.result.meta.sources.pinned.status","previewValue":""}],"type":"object","jpath":"$.result.meta.sources.pinned","previewValue":""},{"name":"catalog","children":[{"name":"request_window","children":[{"name":"start","children":[],"type":"string","jpath":"$.result.meta.sources.catalog.request_window.start","previewValue":"0.0"},{"name":"end","children":[],"type":"string","jpath":"$.result.meta.sources.catalog.request_window.end","previewValue":"1.0"}],"type":"object","jpath":"$.result.meta.sources.catalog.request_window","previewValue":""},{"name":"returned_results","children":[],"type":"string","jpath":"$.result.meta.sources.catalog.returned_results","previewValue":"0.0"},{"name":"name","children":[],"type":"string","jpath":"$.result.meta.sources.catalog.name","previewValue":"catalog"},{"name":"interleaved","children":[],"type":"string","jpath":"$.result.meta.sources.catalog.interleaved","previewValue":"true"},{"name":"window","children":[{"name":"start","children":[],"type":"string","jpath":"$.result.meta.sources.catalog.window.start","previewValue":"0.0"},{"name":"end","children":[],"type":"string","jpath":"$.result.meta.sources.catalog.window.end","previewValue":"0.0"}],"type":"object","jpath":"$.result.meta.sources.catalog.window","previewValue":""},{"name":"status","children":[{"name":"code","children":[],"type":"string","jpath":"$.result.meta.sources.catalog.status.code","previewValue":"200.0"}],"type":"object","jpath":"$.result.meta.sources.catalog.status","previewValue":""}],"type":"object","jpath":"$.result.meta.sources.catalog","previewValue":""},{"name":"interleaved","children":[{"name":"returned_results","children":[],"type":"string","jpath":"$.result.meta.sources.interleaved.returned_results","previewValue":"1.0"},{"name":"has_more_results","children":[],"type":"string","jpath":"$.result.meta.sources.interleaved.has_more_results","previewValue":"true"},{"name":"name","children":[],"type":"string","jpath":"$.result.meta.sources.interleaved.name","previewValue":"interleaved"},{"name":"window","children":[{"name":"start","children":[],"type":"string","jpath":"$.result.meta.sources.interleaved.window.start","previewValue":"0.0"},{"name":"end","children":[],"type":"string","jpath":"$.result.meta.sources.interleaved.window.end","previewValue":"1.0"}],"type":"object","jpath":"$.result.meta.sources.interleaved.window","previewValue":""}],"type":"object","jpath":"$.result.meta.sources.interleaved","previewValue":""},{"name":"knowledge","children":[{"name":"request_window","children":[{"name":"start","children":[],"type":"string","jpath":"$.result.meta.sources.knowledge.request_window.start","previewValue":"0.0"},{"name":"end","children":[],"type":"string","jpath":"$.result.meta.sources.knowledge.request_window.end","previewValue":"1.0"}],"type":"object","jpath":"$.result.meta.sources.knowledge.request_window","previewValue":""},{"name":"returned_results","children":[],"type":"string","jpath":"$.result.meta.sources.knowledge.returned_results","previewValue":"1.0"},{"name":"has_more_results","children":[],"type":"string","jpath":"$.result.meta.sources.knowledge.has_more_results","previewValue":"true"},{"name":"name","children":[],"type":"string","jpath":"$.result.meta.sources.knowledge.name","previewValue":"knowledge"},{"name":"interleaved","children":[],"type":"string","jpath":"$.result.meta.sources.knowledge.interleaved","previewValue":"true"},{"name":"window","children":[{"name":"start","children":[],"type":"string","jpath":"$.result.meta.sources.knowledge.window.start","previewValue":"0.0"},{"name":"end","children":[],"type":"string","jpath":"$.result.meta.sources.knowledge.window.end","previewValue":"1.0"}],"type":"object","jpath":"$.result.meta.sources.knowledge.window","previewValue":""},{"name":"status","children":[{"name":"code","children":[],"type":"string","jpath":"$.result.meta.sources.knowledge.status.code","previewValue":"200.0"}],"type":"object","jpath":"$.result.meta.sources.knowledge.status","previewValue":""}],"type":"object","jpath":"$.result.meta.sources.knowledge","previewValue":""}],"type":"object","jpath":"$.result.meta.sources","previewValue":""},{"name":"count","children":[],"type":"string","jpath":"$.result.meta.count","previewValue":"23.0"},{"name":"tsQueryId","children":[],"type":"string","jpath":"$.result.meta.tsQueryId","previewValue":"c99d7b931b603810360bc88c0a4bcbe1"}],"type":"object","jpath":"$.result.meta","previewValue":""},{"name":"results","children":[{"name":"results_object","children":[{"name":"snippet","children":[],"type":"string","jpath":"$.result.results[*].snippet","previewValue":", you can choose the search criteria by clicking on the \"subject\" of the phishing &lt;strong&gt;mail&lt;/strong&gt; and the sender address \"from\" which the phishing &lt;strong&gt;mail&lt;/strong&gt; arrived In the upper right, click the down arrow and select \"Search"},{"name":"searchResultActions","children":[],"type":"object","jpath":"$.result.results[*].searchResultActions","previewValue":""},{"name":"meta","children":[{"name":"card_label","children":[],"type":"string","jpath":"$.result.results[*].meta.card_label","previewValue":"Knowledge"},{"name":"link","children":[],"type":"string","jpath":"$.result.results[*].meta.link","previewValue":"kb_view.do?sysparm_article=KB0011040"},{"name":"rating","children":[],"type":"string","jpath":"$.result.results[*].meta.rating","previewValue":""},{"name":"additional_fields","children":[],"type":"string","jpath":"$.result.results[*].meta.additional_fields","previewValue":""},{"name":"source","children":[],"type":"string","jpath":"$.result.results[*].meta.source","previewValue":"knowledge"},{"name":"card_show_footer","children":[],"type":"string","jpath":"$.result.results[*].meta.card_show_footer","previewValue":"false"},{"name":"number","children":[],"type":"string","jpath":"$.result.results[*].meta.number","previewValue":"KB0011040"},{"name":"modified_display","children":[],"type":"string","jpath":"$.result.results[*].meta.modified_display","previewValue":"2018-05-20 12:10:59"},{"name":"score","children":[],"type":"string","jpath":"$.result.results[*].meta.score","previewValue":"15.8801"},{"name":"knowledgeBase","children":[],"type":"string","jpath":"$.result.results[*].meta.knowledgeBase","previewValue":"Security Incident Response Runbook"},{"name":"publicationState","children":[],"type":"string","jpath":"$.result.results[*].meta.publicationState","previewValue":"published"},{"name":"card_title","children":[],"type":"string","jpath":"$.result.results[*].meta.card_title","previewValue":""},{"name":"attachment","children":[],"type":"string","jpath":"$.result.results[*].meta.attachment","previewValue":""},{"name":"card_snippet","children":[],"type":"string","jpath":"$.result.results[*].meta.card_snippet","previewValue":""},{"name":"card_icon","children":[],"type":"string","jpath":"$.result.results[*].meta.card_icon","previewValue":""},{"name":"modified","children":[],"type":"string","jpath":"$.result.results[*].meta.modified","previewValue":"2018-05-20 19:10:59"},{"name":"state","children":[],"type":"string","jpath":"$.result.results[*].meta.state","previewValue":"Published"},{"name":"viewCount","children":[],"type":"string","jpath":"$.result.results[*].meta.viewCount","previewValue":"16.0"},{"name":"knowledgeBaseId","children":[],"type":"string","jpath":"$.result.results[*].meta.knowledgeBaseId","previewValue":"429b07aa0b231200263a089b37673a97"},{"name":"parentCategories","children":[],"type":"string","jpath":"$.result.results[*].meta.parentCategories","previewValue":""},{"name":"author","children":[],"type":"string","jpath":"$.result.results[*].meta.author","previewValue":"System Administrator"},{"name":"interleaved","children":[],"type":"string","jpath":"$.result.results[*].meta.interleaved","previewValue":"true"},{"name":"published","children":[],"type":"string","jpath":"$.result.results[*].meta.published","previewValue":"2018-05-14"},{"name":"authorId","children":[],"type":"string","jpath":"$.result.results[*].meta.authorId","previewValue":"6816f79cc0a8016401c5a33be04be441"},{"name":"tags","children":[{"name":"tags_string","children":[],"type":"string","jpath":"$.result.results[*].meta.tags[*]","previewValue":""}],"type":"array.string","jpath":"$.result.results[*].meta.tags[*]","previewValue":""},{"name":"revision_string","children":[],"type":"string","jpath":"$.result.results[*].meta.revision_string","previewValue":"Authored by System Administrator"},{"name":"parentCategoryIds","children":[],"type":"string","jpath":"$.result.results[*].meta.parentCategoryIds","previewValue":""},{"name":"category","children":[],"type":"string","jpath":"$.result.results[*].meta.category","previewValue":""},{"name":"categoryId","children":[],"type":"string","jpath":"$.result.results[*].meta.categoryId","previewValue":""}],"type":"object","jpath":"$.result.results[*].meta","previewValue":""},{"name":"link","children":[],"type":"string","jpath":"$.result.results[*].link","previewValue":"kb_view.do?sysparm_article=KB0011040&amp;sysparm_rank=1&amp;sysparm_tsqueryId=c99d7b931b603810360bc88c0a4bcbe1"},{"name":"id","children":[],"type":"string","jpath":"$.result.results[*].id","previewValue":"kb_knowledge:e7a26d0edb46d3802e64f5861d9619e0"},{"name":"title","children":[],"type":"string","jpath":"$.result.results[*].title","previewValue":"Search for mails from the same sender and matching subject line"}],"type":"object","jpath":"$.result.results[*]","previewValue":""}],"type":"array.object","jpath":"$.result.results[*]","previewValue":""},{"name":"status","children":[{"name":"code","children":[],"type":"string","jpath":"$.result.status.code","previewValue":"200.0"}],"type":"object","jpath":"$.result.status","previewValue":""}],"type":"object","jpath":"$.result","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>65b610e31ba8f450aedf54252a4bcb87</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 18:41:17</sys_created_on>
+        <sys_id>7db610e31ba8f450aedf54252a4bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:41:17</sys_updated_on>
+        <value>{"result":{"request":{"debug":false,"meta":{"window":{"start":0.0,"end":1.0},"totalResults_log":23.0},"query":{"freetext":"mail"},"context":"091fa3d3c37221003d2ae219cdba8f0e"},"meta":{"returned_results":1.0,"has_more_results":true,"sources":{"pinned":{"name":"pinned","status":{"code":200.0}},"catalog":{"request_window":{"start":0.0,"end":1.0},"returned_results":0.0,"name":"catalog","interleaved":true,"window":{"start":0.0,"end":0.0},"status":{"code":200.0}},"interleaved":{"returned_results":1.0,"has_more_results":true,"name":"interleaved","window":{"start":0.0,"end":1.0}},"knowledge":{"request_window":{"start":0.0,"end":1.0},"returned_results":1.0,"has_more_results":true,"name":"knowledge","interleaved":true,"window":{"start":0.0,"end":1.0},"status":{"code":200.0}}},"count":23.0,"tsQueryId":"c99d7b931b603810360bc88c0a4bcbe1"},"results":[{"snippet":", you can choose the search criteria by clicking on the \"subject\" of the phishing &lt;strong&gt;mail&lt;/strong&gt; and the sender address \"from\" which the phishing &lt;strong&gt;mail&lt;/strong&gt; arrived In the upper right, click the down arrow and select \"Search","searchResultActions":{},"meta":{"card_label":"Knowledge","link":"kb_view.do?sysparm_article=KB0011040","rating":"","additional_fields":"","source":"knowledge","card_show_footer":false,"number":"KB0011040","modified_display":"2018-05-20 12:10:59","score":15.8801,"knowledgeBase":"Security Incident Response Runbook","publicationState":"published","card_title":"","attachment":"","card_snippet":"","card_icon":"","modified":"2018-05-20 19:10:59","state":"Published","viewCount":16.0,"knowledgeBaseId":"429b07aa0b231200263a089b37673a97","parentCategories":"","author":"System Administrator","interleaved":true,"published":"2018-05-14","authorId":"6816f79cc0a8016401c5a33be04be441","tags":[],"revision_string":"Authored by System Administrator","parentCategoryIds":"","category":"","categoryId":""},"link":"kb_view.do?sysparm_article=KB0011040&amp;sysparm_rank=1&amp;sysparm_tsqueryId=c99d7b931b603810360bc88c0a4bcbe1","id":"kb_knowledge:e7a26d0edb46d3802e64f5861d9619e0","title":"Search for mails from the same sender and matching subject line"}],"status":{"code":200.0}}}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=65b610e31ba8f450aedf54252a4bcb87"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>65b610e31ba8f450aedf54252a4bcb87</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 18:41:17</sys_created_on>
+        <sys_id>31b610e31ba8f450aedf54252a4bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:41:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>65b610e31ba8f450aedf54252a4bcb87</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 18:41:17</sys_created_on>
+        <sys_id>f1b610e31ba8f450aedf54252a4bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:41:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>65b610e31ba8f450aedf54252a4bcb87</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 18:41:17</sys_created_on>
+        <sys_id>b5b610e31ba8f450aedf54252a4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:41:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[0600a230-771f-4fff-987e-77577aa07cb2].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>65b610e31ba8f450aedf54252a4bcb87</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 18:41:17</sys_created_on>
+        <sys_id>7db610e31ba8f450aedf54252a4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:41:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=65b610e31ba8f450aedf54252a4bcb87^sys_idNOT INf1b610e31ba8f450aedf54252a4bcb8f"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDa1b610e373a8f45082aa626dcf12c48b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=281e7a1a-d2b1-4593-986f-6b7d8cce2b3c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">65b610e31ba8f450aedf54252a4bcb87</model>
+        <model_id>65b610e31ba8f450aedf54252a4bcb87</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_65b610e31ba8f450aedf54252a4bcb87</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 18:41:17</sys_created_on>
+        <sys_id>f1b610e31ba8f450aedf54252a4bcb8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 18:41:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Check Access Requests">6880379f1ba4f450aedf54252a4bcbe9</action>
+        <cid>0600a230-771f-4fff-987e-77577aa07cb2</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>ce2dfb131b28f450aedf54252a4bcbc9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:51:16</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ce2dfb131b28f450aedf54252a4bcbc9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ce2dfb131b28f450aedf54252a4bcbc9</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>0a2dfb131b28f450aedf54252a4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ce2dfb131b28f450aedf54252a4bcbc9</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>0e2dfb131b28f450aedf54252a4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ce2dfb131b28f450aedf54252a4bcbc9</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>462dfb131b28f450aedf54252a4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ce2dfb131b28f450aedf54252a4bcbc9</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>822dfb131b28f450aedf54252a4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <value>/api/now/cxs/search</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ce2dfb131b28f450aedf54252a4bcbc9</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>822dfb131b28f450aedf54252a4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <value>https://jbelote10demo.service-now.com</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ce2dfb131b28f450aedf54252a4bcbc9</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:50:28</sys_created_on>
+        <sys_id>aa5d73531b28f450aedf54252a4bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:50:28</sys_updated_on>
+        <value>63a201cf877f6410518cebdd3fbb35c1</value>
+        <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ce2dfb131b28f450aedf54252a4bcbc9</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>ce2dfb131b28f450aedf54252a4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ce2dfb131b28f450aedf54252a4bcbc9</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:50:28</sys_created_on>
+        <sys_id>e65d73531b28f450aedf54252a4bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:50:28</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ce2dfb131b28f450aedf54252a4bcbc9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>ce2dfb131b28f450aedf54252a4bcbc9</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>4e2dfb131b28f450aedf54252a4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>ce2dfb131b28f450aedf54252a4bcbc9</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>8a2dfb131b28f450aedf54252a4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>ce2dfb131b28f450aedf54252a4bcbc9</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>c62dfb131b28f450aedf54252a4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>ce2dfb131b28f450aedf54252a4bcbc9</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>062dfb131b28f450aedf54252a4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>ce2dfb131b28f450aedf54252a4bcbc9</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:50:28</sys_created_on>
+        <sys_id>665d73531b28f450aedf54252a4bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:50:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>ce2dfb131b28f450aedf54252a4bcbc9</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:50:28</sys_created_on>
+        <sys_id>a25d73531b28f450aedf54252a4bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:50:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>ce2dfb131b28f450aedf54252a4bcbc9</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>022dfb131b28f450aedf54252a4bcbea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:51:16</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"start","value":"0","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"cx","value":"091fa3d3c37221003d2ae219cdba8f0e","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"num","value":"1","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"q","value":"{{action.application_to_check}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>ce2dfb131b28f450aedf54252a4bcbc9</id>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>ca2dfb131b28f450aedf54252a4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ce2dfb131b28f450aedf54252a4bcbc9^sys_idNOT IN6e5d73531b28f450aedf54252a4bcb50"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=9a5fc667-d7bd-4d89-a09d-d3f21efe3a2b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">ce2dfb131b28f450aedf54252a4bcbc9</model>
+        <model_id>ce2dfb131b28f450aedf54252a4bcbc9</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce2dfb131b28f450aedf54252a4bcbc9</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:50:28</sys_created_on>
+        <sys_id>6e5d73531b28f450aedf54252a4bcb50</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:51:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=6880379f1ba4f450aedf54252a4bcbe9^sys_idNOT INca2dfb131b28f450aedf54252a4bcb8a"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e6493182-0c69-4dd4-bfe8-d3631d505a8d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>application_to_check</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Application To Check</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Check Access Requests">6880379f1ba4f450aedf54252a4bcbe9</model>
+        <model_id>6880379f1ba4f450aedf54252a4bcbe9</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_6880379f1ba4f450aedf54252a4bcbe9</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>ca2dfb131b28f450aedf54252a4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_6880379f1ba4f450aedf54252a4bcbe9^sys_idNOT INca2dfb131b28f450aedf54252a4bcbc6"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>application_to_check</element>
+        <help/>
+        <hint/>
+        <label>Application To Check</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_6880379f1ba4f450aedf54252a4bcbe9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 16:49:37</sys_created_on>
+        <sys_id>ca2dfb131b28f450aedf54252a4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 16:49:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

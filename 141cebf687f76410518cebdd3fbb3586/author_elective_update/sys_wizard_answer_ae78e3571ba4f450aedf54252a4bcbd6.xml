@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>New Audit Finding Check</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Audit Finding Check</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">0e7822f787122010518cebdd3fbb3542</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 15:19:15</sys_created_on>
+        <sys_id>ae78e3571ba4f450aedf54252a4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Audit Finding Check</sys_name>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_update_name>sys_wizard_answer_ae78e3571ba4f450aedf54252a4bcbd6</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 15:19:15</sys_updated_on>
+        <table/>
+        <target_url>x_snc_access_req_0_audit_finding_check.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</application>
+        <file_path/>
+        <instance_id>a6f52633dbde2c108aea21c4059619d1</instance_id>
+        <instance_name>jbelote12demo</instance_name>
+        <name>sys_wizard_answer_ae78e3571ba4f450aedf54252a4bcbd6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>New Audit Finding Check</answer><button_label/><dependent_value/><element/><name>Audit Finding Check</name><next_question/><order>100</order><payload_name/><question display_value="Task" name="Task">0e7822f787122010518cebdd3fbb3542</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>james.belote</sys_created_by><sys_created_on>2021-06-10 15:19:15</sys_created_on><sys_id>ae78e3571ba4f450aedf54252a4bcbd6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Audit Finding Check</sys_name><sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package><sys_policy/><sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope><sys_update_name>sys_wizard_answer_ae78e3571ba4f450aedf54252a4bcbd6</sys_update_name><sys_updated_by>james.belote</sys_updated_by><sys_updated_on>2021-06-10 15:19:15</sys_updated_on><table/><target_url>x_snc_access_req_0_audit_finding_check.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>-1197799918</payload_hash>
+        <record_name>Audit Finding Check</record_name>
+        <reverted_from/>
+        <source>541cebf687f76410518cebdd3fbb3589</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-06-10 15:19:16</sys_created_on>
+        <sys_id>e278e3571ba4f450aedf54252a4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179f6818d300000001</sys_recorded_at>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-06-10 15:19:16</sys_updated_on>
+        <type>Answer</type>
+        <update_guid>aa78e35707a4f4504875df3ec8b337d8</update_guid>
+        <update_guid_history>aa78e35707a4f4504875df3ec8b337d8:-1197799918</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-02 16:48:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>c8d1a88bd9d942049e6771a908b48610</sys_id>
+        <sys_metadata>ae78e3571ba4f450aedf54252a4bcbd6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Audit Finding Check</sys_name>
+        <sys_package display_value="Access Request Management" source="x_snc_access_req_0">141cebf687f76410518cebdd3fbb3586</sys_package>
+        <sys_parent display_value="Task">0e7822f787122010518cebdd3fbb3542</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Access Request Management">141cebf687f76410518cebdd3fbb3586</sys_scope>
+        <sys_scope_delete display_value="">378eff31fb034d80a5d0231519a64410</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_ae78e3571ba4f450aedf54252a4bcbd6</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_ae78e3571ba4f450aedf54252a4bcbd6">e278e3571ba4f450aedf54252a4bcbd9</sys_update_version>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-02-02 16:48:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
